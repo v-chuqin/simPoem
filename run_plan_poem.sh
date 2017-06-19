@@ -7,7 +7,7 @@
 
 set -e
 set -x
-export THEANO_FLAGS=device=gpu,floatX=float32,optimizer=None
+export THEANO_FLAGS=device=gpu,floatX=float32#,optimizer=None
 
 to_doc_script="./results_to_doc.py"
 test_data_dir="../data/picked"
