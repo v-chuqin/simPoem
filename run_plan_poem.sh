@@ -50,10 +50,10 @@ else
     test_target=$test_target"-"$reload_iter
   fi
   python run_nmt.py $model test \
-    --test_source test_imageids_with_keywords \
+    --test_source test_keywords \
     --argmax --saveto $saveto --test_target $test_target \
     --reload --reload_iter $reload_iter
 
-  $to_doc_script $test_data_dir $result_dir/$test_target \
-    $doc_dir/$test_target".doc"
+  #$to_doc_script $test_data_dir $result_dir/$test_target \
+   # $doc_dir/$test_target".doc"
 fi
